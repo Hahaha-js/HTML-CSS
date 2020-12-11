@@ -1,11 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'noto Sans KR', sans-serif;
+    font-family: 'noto Sans KR', 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 리셋 */
+
+ul, li {
+    list-style: none;
+}
+
+li {
+    display: inline;
 }
 
 body {
-    font-family: 'noto Sans KR', sans-serif;
-    font-family: 'noto Sans KR', 'Poppins';
+    color: gray;
 }
 
 main {
@@ -17,33 +33,125 @@ main {
 }
 
 .header {
-    background: #ffe100;
-    color: white;
+    position: sticky;
+    background:white;
+    color: black;
     /* padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px; */
     padding: 10px 10px;
-    position: sticky;
     top: 0;
     font-size: 14px;
-
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: background .3s;
 }
 
-footer {
+.header:hover{
+    background: #ffe100;
+}
+
+.header>.inner {
+    display: flex;
+    align-items: center;
+}
+
+.header>.inner>a {
+    /*공백 중요 공백에 따라 소속하는지 상속하는지 구별이 되기때문에 조심*/
+    position: absolute;
+    right: 30px;
+}
+
+.gnb_list li {
+    padding: 10px 30px;
+}
+
+/* footer */
+
+.footer {
     background: white;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    color: #999;
-    width: 100%;
+    /* position: fixed; */
     /* padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px; */
+    bottom: 0;
+    right: 0;
+    color: #999;
+    width: 100%;
     padding: 20px;
-    text-align: center;
+    /* text-align: ; */
+    /* left가 기본값*/
+    font-size: 14px;
     border: 1px solid #999;
+}
+
+.footer .inner {
+    /* padding-top: 48px;
+    padding-bottom: 48px; */
+    display: flex;
+    /* flex는 부모에게 줘야한다. */
+    align-items: flex-start;
+    /*수평정렬*/
+    justify-content: space-between;
+}
+
+.btn_top {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.policy_list {
+    display: flex;
+    /* padding-bottom: 71px; */
+}
+
+.copyright {
+    /* margin-top:  71px; */
+    padding-top: 71px;
+    display: block;
+}
+
+.policy_list li, .share_list li, .share_list {
+    display: inline-block;
+}
+
+.policy_list li {
+    margin-right: 30px;
+}
+
+.share_title {
+    font-weight: 700px;
+    color: black;
+}
+
+.related_list {
+    margin-bottom: 30px;
+}
+
+.share_list img {
+    width: 24px;
+    /* margin-top: 30px; */
+    vertical-align: middle;
+    /* 수직 정렬 (가로정렬)*/
+    margin-left: 8px;
+}
+
+/* .gnb_list_footer {
+    display: flex;
+    margin: auto;
+    align-self: 0;
+}
+
+.Enterprise {
+    display: flex;
+    padding: 10px 30px;
+}
+
+.info_policy {
+    display: flex;
 }
 
 h1 {
@@ -54,33 +162,21 @@ h1 {
 tag 선택자 < class 선택자  < #id 선택자 < InStyle 선택자 
 */
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+/* .gnb_list {
+    display: flex;
+    /*고정값 주는 것 */
 
-ul li {
-    list-style: none;
-}
+/* }
 
-.gnb_list {
+
+.footer>.inner a {
     display: flex;
 }
 
-.gnb_list li {
-    padding: 10px 30px;
-}
-
-li {
-    display: inline;
-}
-
-.header>.inner {
+.logo {
     display: flex;
-    align-items: center;
 }
 
-.header> .inner> a {
-    position: absolute;
-    right: 30px;
-}
+.image {
+    display: flex;
+} */

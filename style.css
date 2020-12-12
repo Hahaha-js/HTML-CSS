@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'noto Sans KR', sans-serif;
-    font-family: 'noto Sans KR', 'Poppins';
+}
+
+/* 리셋 */
+
+body {
+    color: gray;
 }
 
 a {
@@ -10,60 +15,56 @@ a {
     color: inherit;
 }
 
-/* 리셋 */
-
 ul, li {
     list-style: none;
 }
 
-li {
-    display: inline;
+/* common */
+
+.inner {
+    padding: 30px
 }
 
-body {
-    color: gray;
-}
-
-main {
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px; */
-    padding: 20px 30px;
-}
+/**geader*/
 
 .header {
-    position: sticky;
-    background:white;
-    color: black;
     /* padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px; */
-    padding: 10px 10px;
+    position: sticky;
+    background: white;
+    color: black;
+    padding: 10px 30px;
     top: 0;
     font-size: 14px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: background .3s;
 }
 
-.header:hover{
+.header:hover {
     background: #ffe100;
 }
 
-.header>.inner {
+.header .inner {
     display: flex;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.header>.inner>a {
+.header .inner > a {
     /*공백 중요 공백에 따라 소속하는지 상속하는지 구별이 되기때문에 조심*/
     position: absolute;
     right: 30px;
 }
 
+.gnb_list {
+   display: flex;
+}
+
 .gnb_list li {
-    padding: 10px 30px;
+    margin-left: 30px;
 }
 
 /* footer */
@@ -103,15 +104,15 @@ main {
     cursor: pointer;
 }
 
-.policy_list {
-    display: flex;
-    /* padding-bottom: 71px; */
-}
-
 .copyright {
     /* margin-top:  71px; */
     padding-top: 71px;
     display: block;
+}
+
+.policy_list {
+    display: flex;
+    /* padding-bottom: 71px; */
 }
 
 .policy_list li, .share_list li, .share_list {

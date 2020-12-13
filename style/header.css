@@ -1,0 +1,48 @@
+.header {
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    /* position: fixed; */
+    position: absolute;
+    /* background: #ffe100; */
+    color:white;
+   
+    top: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300px;
+    
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+    transition: background .3s;
+
+    z-index: 10;
+    /* defult값 0보다 큰 값만 주면 상위로 올라감 */
+}
+
+.header:hover {
+    background: white;
+    color: gray;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header .inner > a {
+    /*공백 중요 공백에 따라 소속하는지 상속하는지 구별이 되기때문에 조심*/
+    position: absolute;
+    right: 30px;
+}
+
+.gnb_list {
+   display: flex;
+}
+
+.gnb_list li {
+    margin-left: 30px;
+}

@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/header.css">
+
 
 
 </head>
@@ -19,7 +23,7 @@
         <div class="inner">
             <!--inline style-->
             <h1>
-                <a href="#"><img src="./asset/logo01.png" style="width: 81px" alt="Kakao i">
+                <a href="#"><img src="./asset/logo01.png" style="width: 81px;" alt="Kakao i">
                 </a>
                 <!--a = 뭐가 와야하니까 #을 넣어준다. src 사진이 있는 주소 입력, style 크기-->
             </h1>
@@ -42,19 +46,29 @@
 
     <main class="main">
         <div class="visual">
-            <img src="./asset/main01.jpg" style="width: 100%;" alt="main">
+            <img src="./asset/main01.jpg" style="width: 100%;">
+            <a href="">
+                <strong>내 손안의 스마트한 친구 미니링크</strong>
+                <span>미니링크 더 알아보기</span>
+
+            </a>
         </div>
 
-        <section class="feature">
-            <div class="inner"></div>
-            <div class="product">
-                <img src="./asset/product01.jpg" style="width: 50%; float:left;" alt=" product01">
-                <img src="./asset/product02.jpg" style="width: 50%; float:left; " alt="product02">
-            </div>
-            <div class="video">
-                <video autoplay loop poster="video.mp4" src="./asset/video.mp4 " type="video/mp4"
-                    style="width: 100%"></video>
 
+        <section class="feature">
+            <div class="inner">
+
+                <div class="product">
+                    <a href=""><img src="./asset/product01.jpg" style="width: 100%; float:left;" alt=" product01"></a>
+                    <a href=""><img src="./asset/product02.jpg" style="width: 100%; float:left; " alt="product02"></a>
+
+                </div>
+                <div class="video">
+                    <video muted controls autoplay loop poster="video.mp4" src="./asset/video.mp4 " type="video/mp4"
+                        style="width: 100%; margin-top: 10px;"></video>
+
+
+                </div>
             </div>
 
         </section>
@@ -67,51 +81,55 @@
 
         <section class="inside">
             <div class="inner">
-                <h4>우리가 함께 만드는 가치</h4>
-                <ul class="insider_list">
+                <h4 style="font-weight: bold; font-size: 20px; color: black;">우리가 함께 만드는 가치</h4>
+                <a class="link_more"href="#">더 알아보기 ></a>
+                <ul class="inside_list">
+
                     <li>
                         <a href="#" class="inside_link">
-                            <div>
-                                <img src="./asset/content01.jpg" style="width: 400px;" alt=" content01">
+                            <div class="inside_thumb">
+                                <img src="./asset/content01.jpg" style="width: 100%" alt=" content01">
+                                <span class="txt_thumb">Smart Accessory</span>
                             </div>
-                            <div class="inside_content">
-
-                                <strong>인터페이스의 혁신을 보여주는 카카오 i 차량 음성인식<strong>
-                                        <p>
-                                            카카오 i의 음성인식 기술과 방대한 정보데이터를 기반으로, 말로 더 쉽고 편리한 드라이빙 경험을 제공합니다. 주행 중에도 말로 쉽고편하게
-                                            차량 제어,
-                                            길
-                                            찾기는
-                                            물론,
-                                            카카오톡, 뉴스, 게임 등 다양한 서비스를 이용해보세요.</p>
+                            <div class="contents">
+                                <strong>카카오 i의 음성인식 </strong>
+                                <p>기술과 방대한 정보데이터를 기반으로, 말로 더 쉽고 편리한 드라이빙 경험을 제공합니다. 주행 중에도 말로 쉽고편하게차량 제어, 길 찾기는 물론,
+                                    카카오톡, 뉴스, 게임 등 다양한 서비스를 이용해보세요.
+                                </p>
                             </div>
-                            <div>
-                                <img src="./asset/content02.jpg" style="width: 400px; " alt=" content02">
+                    </li>
+                    <li>
+                        <a href="#" class="inside_link">
+                            <div class="inside_thumb">
+                                <img src="./asset/content02.jpg" style="width: 100%" alt=" content02">
+                                <span class="txt_thumb">Mobility</span>
                             </div>
-                            <div class="inside_content">
-
-                                <strong>t새로운 라이딩 경험을 선사하는 헤이카카오를 품은 스마트 헬멧<strong>
-                                        <p>
-                                            카카오 i가 생활에 필요한 액세서리들과 만나면 또 다른가치가 만들어집니다. 헤이 카카오와 연동되는 세나 스마트 헬멧으로 더욱 안전한
-                                            라이딩을 즐길 수 있는 것처럼요.
-                                        </p>
+                            <div class="contents">
+                                <strong>새로운 라이딩 경험을 선사하는 헤이카카오를 품은 스마트 헬멧 </strong>
+                                <p>카카오 i가 생활에 필요한 액세서리들과 만나면 또 다른 가치가 만들어집니다. 헤이카카오와 연동되는 세나 스마트 헬멧으로 더욱 안전한 라이딩을 즐길 수
+                                    있는것처럼요.
+                                </p>
                             </div>
-                            <div>
-                                <img src="./asset/content03.jpg" style="width: 400px; " alt=" content03">
+                    </li>
+                    <li>
+                        <a href="#" class="inside_link">
+                            <div class="inside_thumb">
+                                <img src="./asset/content03.jpg" style="width: 100%" alt=" content03">
+                                <span class="txt_thumb">Display</span>
                             </div>
-                            <div class="inside_content">
-
-                                <strong>리모콘 없이 음성으로 즐기는 다양한 콘텐츠<strong>
-                                        <p>
-                                            카카오미니가 TV 및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절하는 등 일상 속 말로 하는 편리함을
-                                            느껴보세요. 날씨, 뉴스,환율,정보검색 등 다양한 콘텐츠를 이용할 수 있어요.
-                                        </p>
+                            <div class="contents">
+                                <strong> 리모콘 없이 음성으로 즐기는 다양한 콘텐츠 </strong>
+                                <p>카카오미니가 TV 및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절을 하는 등 일상 속 말로 하는 편리함을 느껴보세요.
+                                    날씨,뉴스,환율,정보검색 등 다양한 콘텐츠를 이용할 수 있어요.
+                                </p>
                             </div>
-                        </a>
                     </li>
 
+
+
+
+
                 </ul>
-            </div>
         </section>
 
 

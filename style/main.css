@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'noto Sans KR', sans-serif;
+}
+
+/* 리셋 */
+
+body {
+    color: gray;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* common */
+
+.inner {
+    padding: 20px
+}
+
+/*feature > product*/
+
+.product {
+    display: flex;
+}
+
+.product a:nth-child(1) {
+    margin-right: 10px;
+}
+
+.inside {
+    font-size: 16px;
+    margin: 100px 0px;
+    /* position: relative; */
+}
+
+.inside_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.link_more {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-weight: bold;
+}
+
+.inside_list {
+    display: flex;
+    justify-content: space-between  /*( 수평)*/
+}
+
+/* .inside_link{
+    display: flex;
+
+} */
+
+.inside_list li {
+    flex: 1;
+    margin: 10px;
+}
+
+/* .inside_list li:nth-child(2)
+margin-right : 15px 
+li리스트의 2번째의 마진만 오른쪽으로 15px 주겠다 */
+
+.inside_thumb {
+    margin-bottom: 16px;
+    display: flex;
+    position: relative;
+   
+}
+
+.inside_content strong {
+    font-size: 18px;
+    color: black;
+}
+
+.inside_content {
+    margin-top: 8px;
+}
+
+.inside .inner {
+    position: relative;
+
+}
+
+.inside .inner >a {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.content strong{
+    color: black;
+}
+
+
+.txt_thumb{
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: rgb(255, 255, 255)
+   
+    
+}
+.visual{
+    position: relative;
+    color: white;
+    font-weight: bolder;
+}
+.visual a {
+    position: absolute;
+    left: 30px;
+    width: 350px;
+    transform: translateY(-50%);
+    top :50%;
+    
+
+   
+}
+
+.visual strong{
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -1px;
+    word-break : keep-all
+
+
+}
+
+

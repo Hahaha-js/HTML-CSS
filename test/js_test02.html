@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="title">Title</h1>
+    
+    <script>
+        const title_el = document.getElementById('title');
+
+        console.log(title_el); // 
+        console.dir(title_el.innerText); //h1이 가진 모든 속성을 알려준다. 값을 찾아낼때 사용함
+        // .innerText 를 하면 가지고있는 Title 를 리턴한다.
+
+        title_el.innerText = "메롱";
+        // 상수값은 값이 변경될 수 없지만 'document.getElementById('title')''을 주소만 받고있어서 변경가능
+    </script>
+</body>
+</html>

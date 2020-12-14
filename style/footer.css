@@ -1,31 +1,17 @@
-/* footer */
-
 .footer {
-    background: white;
-    /* position: fixed; */
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px; */
-    bottom: 0;
-    right: 0;
-    color: #999;
     width: 100%;
-    padding: 20px;
-    /* text-align: ; */
-    /* left가 기본값*/
+    border-top: 1px solid #666;
+    color: #666;
+    background: #fff;
     font-size: 14px;
-    border: 1px solid #999;
 }
 
 .footer .inner {
-    /* padding-top: 48px;
-    padding-bottom: 48px; */
+    padding-top: 48px;
+    padding-bottom: 48px;
     display: flex;
-    /* flex는 부모에게 줘야한다. */
-    align-items: flex-start;
-    /*수평정렬*/
-    justify-content: space-between;
+    align-items: flex-start; /*flex item의 수직*/
+    justify-content: space-between; /*flex item의 수평*/
 }
 
 .btn_top {
@@ -36,17 +22,13 @@
 }
 
 .copyright {
-    /* margin-top:  71px; */
-    padding-top: 71px;
     display: block;
+    padding-top: 71px;
 }
 
-.policy_list {
-    display: flex;
-    /* padding-bottom: 71px; */
-}
-
-.policy_list li, .share_list li, .share_list {
+.policy_list li,
+.share_list li,
+.share_list {
     display: inline-block;
 }
 
@@ -55,18 +37,20 @@
 }
 
 .share_title {
-    font-weight: 700px;
-    color: black;
+    color: #000;
+}
+
+.share_list img {
+    width: 24px ;
 }
 
 .related_list {
     margin-bottom: 30px;
 }
 
-.share_list img {
+.ico_img {
     width: 24px;
-    /* margin-top: 30px; */
-    vertical-align: middle;
-    /* 수직 정렬 (가로정렬)*/
+    vertical-align: middle; /*수평*/
+    
     margin-left: 8px;
 }

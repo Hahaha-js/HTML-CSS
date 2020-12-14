@@ -1,29 +1,19 @@
 .header {
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px; */
-    /* position: fixed; */
-    position: absolute;
-    /* background: #ffe100; */
-    color:white;
-   
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     width: 100%;
+    color: #fff;
     font-size: 14px;
-    font-weight: 300px;
-    
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
     transition: background .3s;
-
-    z-index: 10;
-    /* defult값 0보다 큰 값만 주면 상위로 올라감 */
+    z-index: 1;
 }
 
+.header.act,
 .header:hover {
-    background: white;
-    color: gray;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    color: #666;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header .inner {
@@ -34,15 +24,14 @@
 }
 
 .header .inner > a {
-    /*공백 중요 공백에 따라 소속하는지 상속하는지 구별이 되기때문에 조심*/
-    position: absolute;
+    position: absolute; 
     right: 30px;
 }
 
 .gnb_list {
-   display: flex;
+    display: flex;
 }
 
 .gnb_list li {
-    margin-left: 30px;
+    margin-left: 50px;
 }

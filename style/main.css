@@ -1,145 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'noto Sans KR', sans-serif;
-}
-
-/* 리셋 */
-
-body {
-    color: gray;
+.visual {
     position: relative;
+    color: #fff;
+    font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.visual a {
+    width: 350px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-ul, li {
-    list-style: none;
+.visual strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -1px;
+    word-break: keep-all;
 }
 
-/* common */
-
-.inner {
-    padding: 20px
-}
-
-/*feature > product*/
-
+/* feature > product */
 .product {
     display: flex;
+    margin-bottom: 15px;
 }
 
-.product a:nth-child(1) {
-    margin-right: 10px;
+.product > a:first-child {
+    margin-right: 15px;
 }
 
+/* inside */
 .inside {
     font-size: 16px;
-    margin: 100px 0px;
-    /* position: relative; */
+    /* margin-top: 60px;
+    margin-bottom: 100px; */
+    margin: 60px 0 100px;
+}
+
+.inside .inner {
+    position: relative;
 }
 
 .inside_title {
     margin-bottom: 20px;
     font-size: 20px;
-    color: black;
+    color: #000;
 }
 
 .link_more {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 35px;
+    right: 30px;
     font-weight: bold;
 }
 
 .inside_list {
     display: flex;
-    justify-content: space-between  /*( 수평)*/
+    justify-content: space-between;
 }
-
-/* .inside_link{
-    display: flex;
-
-} */
 
 .inside_list li {
     flex: 1;
-    margin: 10px;
 }
 
-/* .inside_list li:nth-child(2)
-margin-right : 15px 
-li리스트의 2번째의 마진만 오른쪽으로 15px 주겠다 */
+.inside_list li:nth-of-type(2) {
+    margin: 0 15px;
+}
 
 .inside_thumb {
     margin-bottom: 16px;
-    display: flex;
     position: relative;
-   
+}
+
+.thumb_text {
+    position: absolute;
+    color: #ffffff;
+    left: 15px;
+    top: 10px;
+    font-weight: bold;
 }
 
 .inside_content strong {
     font-size: 18px;
-    color: black;
+    color: #000;
 }
 
 .inside_content {
     margin-top: 8px;
 }
-
-.inside .inner {
-    position: relative;
-
-}
-
-.inside .inner >a {
-    position: absolute;
-    top:0;
-    right: 0;
-}
-
-.content strong{
-    color: black;
-}
-
-
-.txt_thumb{
-    position: absolute;
-    left: 10px;
-    font-size: 18px;
-    color: rgb(255, 255, 255)
-   
-    
-}
-.visual{
-    position: relative;
-    color: white;
-    font-weight: bolder;
-}
-.visual a {
-    position: absolute;
-    left: 30px;
-    width: 350px;
-    transform: translateY(-50%);
-    top :50%;
-    
-
-   
-}
-
-.visual strong{
-    display: block;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 56px;
-    line-height: 72px;
-    letter-spacing: -1px;
-    word-break : keep-all
-
-
-}
-
-

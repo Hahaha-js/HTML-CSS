@@ -1,140 +1,130 @@
 <!DOCTYPE html>
-
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width-device-width, initial-scale-1.0"> -->
-    <title>Document</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Kakao i</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/header.css">
-
-
-
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 
 <body>
+    <!-- <div id="wrap"> -->
+
+    <!-- header -->
     <header class="header">
         <div class="inner">
-            <!--inline style-->
             <h1>
-                <a href="#"><img src="./asset/logo01.png" style="width: 81px;" alt="Kakao i">
+                <a href="#">
+                    <img class="logo_img" style="width: 82px;" src="./asset/logo01.png" alt="Kakao i">
                 </a>
-                <!--a = 뭐가 와야하니까 #을 넣어준다. src 사진이 있는 주소 입력, style 크기-->
             </h1>
 
             <nav class="gnb">
                 <ul class="gnb_list">
-                    <li><a href="#" class="link_gnb_link">소개</a></li>
-                    <li><a href="#" class="link_gnb_link">서비스</a></li>
-                    <li><a href="#" class="link_gnb_link">제품</a></li>
-                    <li><a href="#" class="link_gnb_link">파트너</a></li>
+                    <li><a href="#" class="gnb_link">소개</a></li>
+                    <li><a href="#" class="gnb_link">서비스</a></li>
+                    <li><a href="#" class="gnb_link">제품</a></li>
+                    <li><a href="#" class="gnb_link">파트너</a></li>
                 </ul>
             </nav>
 
-
-            <a href="#" class="link">제휴문의</a>
-
-
+            <a href="#">제휴문의</a>
         </div>
     </header>
 
+    <!-- main -->
     <main class="main">
+        <!-- visual -->
         <div class="visual">
-            <img src="./asset/main01.jpg" style="width: 100%;">
-            <a href="">
-                <strong>내 손안의 스마트한 친구 미니링크</strong>
-                <span>미니링크 더 알아보기</span>
-
+            <img style="width: 100%;" src="./asset/main01.jpg" alt="">
+            <a href="#">
+                <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
+                <span>미니헥사 더 알아보기</span>
             </a>
         </div>
 
-
+        <!-- info feature -->
         <section class="feature">
             <div class="inner">
-
                 <div class="product">
-                    <a href=""><img src="./asset/product01.jpg" style="width: 100%; float:left;" alt=" product01"></a>
-                    <a href=""><img src="./asset/product02.jpg" style="width: 100%; float:left; " alt="product02"></a>
-
+                    <a href="#">
+                        <img style="width: 100%;" src="./asset/product01.jpg" alt="제품 - 인공지능 더보기">
+                    </a>
+                    <a href="#">
+                        <img style="width: 100%;" src="./asset/product02.jpg" alt="제품 - 헤이카카오 더보기">
+                    </a>
                 </div>
                 <div class="video">
-                    <video muted controls autoplay loop poster="video.mp4" src="./asset/video.mp4 " type="video/mp4"
-                        style="width: 100%; margin-top: 10px;"></video>
-
-
+                    <video controls autoplay muted style="width: 100%;">
+                        <source src="./asset/video.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-
         </section>
 
+        <!-- info intro -->
         <section class="intro">
             <div class="inner">
-                <img src="./asset/intro.png" style="width: 100%;" alt="intro">
+                <img style="width: 100%;" src="./asset/intro.png" alt="동영상 - 헤이카카오 영상">
             </div>
         </section>
 
+        <!-- info inside -->
         <section class="inside">
             <div class="inner">
-                <h4 style="font-weight: bold; font-size: 20px; color: black;">우리가 함께 만드는 가치</h4>
-                <a class="link_more"href="#">더 알아보기 ></a>
+                <h4 class="inside_title">우리가 함께 만드는 가치</h4>
+                <a class="link_more" href="#">더 알아보기 &gt;</a>
                 <ul class="inside_list">
-
                     <li>
                         <a href="#" class="inside_link">
                             <div class="inside_thumb">
-                                <img src="./asset/content01.jpg" style="width: 100%" alt=" content01">
-                                <span class="txt_thumb">Smart Accessory</span>
+                                <img style="width: 100%;" src="./asset/content02.jpg" alt="content01">
+                                <span class="thumb_text">Mobility</span>
                             </div>
-                            <div class="contents">
-                                <strong>카카오 i의 음성인식 </strong>
-                                <p>기술과 방대한 정보데이터를 기반으로, 말로 더 쉽고 편리한 드라이빙 경험을 제공합니다. 주행 중에도 말로 쉽고편하게차량 제어, 길 찾기는 물론,
-                                    카카오톡, 뉴스, 게임 등 다양한 서비스를 이용해보세요.
-                                </p>
+                            <div class="inside_content">
+                                <strong>인터페이스의 혁신을 보여주는 카카오 i 차량 음성인식</strong>
+                                <p>카카오 i의 음성인식 기술과 방대한 정보데이터를 기반으로, 말로 더 쉽고 편리한 드라이빙 경험을 제공합니다. 주행 중에도 말로 쉽고 편하게 차량 제어,
+                                    길 찾기는 물론, 카카오톡, 뉴스, 게임 등 다양한 서비스를 이용해보세요.</p>
                             </div>
+                        </a>
                     </li>
                     <li>
                         <a href="#" class="inside_link">
                             <div class="inside_thumb">
-                                <img src="./asset/content02.jpg" style="width: 100%" alt=" content02">
-                                <span class="txt_thumb">Mobility</span>
+                                <img style="width: 100%;" src="./asset/content01.jpg" alt="content02">
+                                <span class="thumb_text">Smart Accessory</span>
                             </div>
-                            <div class="contents">
-                                <strong>새로운 라이딩 경험을 선사하는 헤이카카오를 품은 스마트 헬멧 </strong>
-                                <p>카카오 i가 생활에 필요한 액세서리들과 만나면 또 다른 가치가 만들어집니다. 헤이카카오와 연동되는 세나 스마트 헬멧으로 더욱 안전한 라이딩을 즐길 수
-                                    있는것처럼요.
-                                </p>
+                            <div class="inside_content">
+                                <strong>새로운 라이딩 경험을 선사하는 헤이카카오를 품은 스마트 헬멧</strong>
+                                <p>카카오 i가 생활에 필요한 액세서리들과 만나면 또 다른 가치가 만들어집니다. 헤이카카오와 연동되는 세나 스마트 헬멧으로 더욱 안전하나 라이딩을 즐길 수
+                                    있는 것처럼요.</p>
                             </div>
+                        </a>
                     </li>
                     <li>
                         <a href="#" class="inside_link">
                             <div class="inside_thumb">
-                                <img src="./asset/content03.jpg" style="width: 100%" alt=" content03">
-                                <span class="txt_thumb">Display</span>
+                                <img style="width: 100%;" src="./asset/content03.jpg" alt="content03">
+                                <span class="thumb_text">Display</span>
                             </div>
-                            <div class="contents">
-                                <strong> 리모콘 없이 음성으로 즐기는 다양한 콘텐츠 </strong>
+                            <div class="inside_content">
+                                <strong>리모콘 없이 음성으로 즐기는 다양한 콘텐츠</strong>
                                 <p>카카오미니가 TV 및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절을 하는 등 일상 속 말로 하는 편리함을 느껴보세요.
-                                    날씨,뉴스,환율,정보검색 등 다양한 콘텐츠를 이용할 수 있어요.
-                                </p>
+                                    날씨, 뉴스, 환율, 정보검색 등 다양한 콘텐츠를 이용할 수 있어요.</p>
                             </div>
+                        </a>
                     </li>
-
-
-
-
-
                 </ul>
+            </div>
         </section>
-
-
-
-        </div>
     </main>
 
     <!-- footer -->
@@ -142,12 +132,11 @@
         <div class="inner">
             <div class="logo">
                 <a href="#">
-                    <img src="./asset/logo01.png" style="width: 82px;" alt="Kakao i">
+                    <img class="logo_img" src="./asset/logo01.png" style="width: 82px;" alt="Kakao i">
                 </a>
-
             </div>
 
-            <div class="info_policy">
+            <div class="policy">
                 <ul class="policy_list">
                     <li><a href="#">서비스 약관</a></li>
                     <li><a href="#">개인정보 취급방침</a></li>
@@ -159,29 +148,24 @@
                 </small>
             </div>
 
-
             <div class="related">
                 <ul class="related_list">
                     <li><a href="#">Kakao Enterprise</a></li>
                     <li><a href="#">Kakao Enterprise Tech Blog</a></li>
                     <li><a href="#">Kakao i Developers</a></li>
-
                 </ul>
-
-
                 <div class="share">
                     <strong class="share_title">Share</strong>
                     <ul class="share_list">
                         <li>
                             <a href="#">
-                                <img class="ico_img" src="./asset/ico_kakao.png" alt="Kakao i">
+                                <img class="ico_img" src="./asset/ico_kakao.png" alt="kakaotalk">
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img class="ico_img" src="./asset/ico_kakaostory.png" alt="kakaostory">
                             </a>
-
                         </li>
                         <li>
                             <a href="#">
@@ -193,18 +177,60 @@
                                 <img class="ico_img" src="./asset/ico_twitter.png" alt="twitter">
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </div>
 
-
-            <button type="button" class="btn_top">Back to Top</button>
-
-
+            <button onclick="topFunction()" type="button" class="btn_top">Back to Top</button>
         </div>
     </footer>
 
+
+    <script>
+        //back to top button event
+        function topFunction() {
+            // document.body.scrollTop = 0;
+            // document.documentElement.scrollTop = 0;
+            window.scroll(null, 0); //scroll(x축, y축)
+        }
+        // window.onscroll = printScrollY; 함수이름
+        // window.addEventListener('scroll',printScrollY)
+        // function printScrollY(){
+        //     console.log(window.wcrollY);
+        // }
+        // console.log(printScrollY)
+
+        //header
+        const header = document.getElementsByClassName('header')[0];
+
+        console.log(header.style);
+        // header.style.color="red"; 
+        //inline 스타일만 가지고 올 수 있다. 그래서 덮어쓰기로 사용이 가능
+        console.log(window.scrollY);
+
+        window.onscroll = function () {
+            //     if (window.scrollY != 0) {
+            //         header.style.color = "#666";
+            //         header.style.background = '#fff';
+            //         header.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
+
+            //     }else {
+            //         header.style.color = null;
+            //         header.style.background = null;
+            //         header.style.boxShadow = null;
+            //     }
+            // }
+            if (window.scrollY == 0) {
+                header.classList.remove('act');
+
+            } else
+                header.classList.add('act');
+
+        }
+
+
+        //id 바꾸기
+    </script>
 </body>
 
 </html>

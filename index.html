@@ -18,7 +18,7 @@
 <body>
 
     <!-- header -->
-    <header class="header">
+    <header id="header">
         <div class="inner">
             <h1>
                 <a href="#">
@@ -42,15 +42,26 @@
     <!-- main -->
     <main class="main">
         <!-- visual -->
-        <div id="main_visual">
-            <div class="image_list">
-                <img style="width: 100%;" src="./asset/main01.jpg" alt="">
-                <img style="width: 100%;" src="./asset/main02.jpg" alt="">
-                <a href="#">
-                    <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
-                    <span>미니헥사 더 알아보기</span>
-                </a>
-            </div>
+        <div id="visual">
+            <ul id="slide_list">
+                <li class="slide_item">
+                    <img style="width: 100%" src="../asset/main01.jpg" alt="">
+                    <a class="sile_txt" href="#">
+                        <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
+                        <span>미니헥사 더 알아보기</span>
+                    </a>
+
+                </li>
+                <li class="slide_item">
+                    <img style="width: 100%" src="../asset/main02.jpg" alt="">
+                    <a class="sile_txt" href="#">
+                        <strong>내 손안의 스카트한 친구 미니링크</strong>
+                        <span>미니링크 더 알아보기</span>
+                    </a>
+
+                </li>
+
+            </ul>
         </div>
 
         <!-- info feature -->
@@ -187,73 +198,12 @@
         </div>
     </footer>
 
-
-    <script>
-        //back to top button event//
-        function topFunction() {
-            r
-            // document.body.scrollTop = 0;
-            // document.documentElement.scrollTop = 0;
-            window.scroll(null, 0); //scroll(x축, y축)
-        }
-        // window.onscroll = printScrollY; 함수이름
-        // window.addEventListener('scroll',printScrollY)
-        // function printScrollY(){
-        //     console.log(window.wcrollY);
-        // }
-        // console.log(printScrollY)
-
-        //header
-        const header = document.getElementsByClassName('header')[0];
-
-        console.log(header.style);
-        // header.style.color="red"; 
-        //inline 스타일만 가지고 올 수 있다. 그래서 덮어쓰기로 사용이 가능
-        console.log(window.scrollY);
-
-        window.onscroll = function () {
-            //     if (window.scrollY != 0) {
-            //         header.style.color = "#666";
-            //         header.style.background = '#fff';
-            //         header.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.5)';
-
-            //     }else {
-            //         header.style.color = null;
-            //         header.style.background = null;
-            //         header.style.boxShadow = null;
-            //     }
-            // }
-            if (window.scrollY == 0) {
-                header.classList.remove('act');
-
-            } else
-                header.classList.add('act');
-
-        }
+    <script src="js/backToTop.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
 
 
-        const visual_area = document.getElementById('main_visual');
-        const image_list = document.querySelector('.image_list');
 
-        visual_area.onmousemove = function (e) {
-            if (e.offsetX > visual_area.offsetWidth / 2) {
-                image_list.style.cursor = url(arrow_left.png) 0 0, auto;
-            } else {
-                image_list.style.cursor = url(arrow_right.png) 0 0, auto;
-            }
-        }
-
-        visual_area.onclick = function (e) {
-            if (e.offsetX > visual_area.offsetWidth / 2) {
-                image_list.style.left = -visual_area.offsetWidth + 'px';
-            } else {
-                image_list.style.left = 0;
-            }
-        }
-
-    </script>
-
-    //id 바꾸기
 
 </body>
 

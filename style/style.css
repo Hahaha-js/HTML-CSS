@@ -14,24 +14,12 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    
 }
 
 img {
     width: 100%;
 }
-
-.image_list {
-    display: flex;
-    position: relative;
-    left: 0;
-    transition: left 0.3s;
-    
-}
-
-#main_visual {
-    overflow: hidden;
-}
-
 
 
 /* common */

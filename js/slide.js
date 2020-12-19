@@ -1,7 +1,7 @@
 
 
 const visual_area = document.getElementById('visual');
-const slide_item = document.querySelector('#slide_list');
+const slide_item = document.getElementById('slide_list');
 
     visual_area.onmousemove = function (e) {
     if (e.offsetX > visual_area.offsetWidth / 2) {
